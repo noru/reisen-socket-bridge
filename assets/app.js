@@ -25,7 +25,7 @@
     clearInterval(intervalId)
   }
 
-  $('.controller-row > div').on('mousedown touchstart', handleKeyDown)
-  $('.controller-row > div').on('mouseup touchend', handleKeyUp)
+  $('.controller-row > div').on('mousedown touchstart pointerdown', handleKeyDown)
+  $('.controller-row > div').on('mouseup touchend pointerup', handleKeyUp)
 
 })()
