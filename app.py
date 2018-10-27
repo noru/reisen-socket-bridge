@@ -9,8 +9,8 @@ socketio = SocketIO(app)
 
 linear_speed = 0.2
 angular_speed = 1.0
-linear_range = [0.2, 4.0]
-angular_range = [1.0, 4.0]
+linear_range = [0.2, 2.5]
+angular_range = [1.0, 2.5]
 publisher = rospy.Publisher('cmd_vel', Twist, queue_size = 1)
 rospy.init_node('reisen_socket_bridge')
 
