@@ -1,0 +1,59 @@
+body {
+  background: gray;
+}
+
+.root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controller {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 30vh;
+  width: 30vh;
+  justify-content: space-between;
+}
+
+.controller-row {
+  display: flex;
+  justify-content: space-between;
+}
+.controller-row > div {
+  width: 7.5em;
+  height: 7.5em;
+  background: white;
+  text-align: center;
+  border: 1px solid darkolivegreen;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.controller-row > div:hover {
+  background: lightblue;
+}
+.controller-row > div:active {
+  background: yellowgreen;
+}
+
+.controller-row > div > i {
+  font-size: 5em;
+  pointer-events: none;
+}
+
+#up-left i {
+  transform: rotate(-45deg);
+}
+#up-right i {
+  transform: rotate(45deg);
+}
+#down-left i {
+  transform: rotate(-135deg);
+}
+#down-right i {
+  transform: rotate(135deg);
+}
