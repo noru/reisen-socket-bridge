@@ -8,4 +8,6 @@ A socket server listenning to port 5000. Also a simple web interface to control 
 # 2. in project folder
 python setup.py install
 python app.py
+
+# 3. open {raspi id address}:5000 in your browser
 ```
