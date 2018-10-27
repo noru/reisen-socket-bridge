@@ -8,24 +8,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .controller {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 30vh;
-  width: 30vh;
-  justify-content: space-between;
+  height: 35vh;
+  width: 35vh;
+}
+
+.speed-control {
+  font-size: 3em;
+  width: 50%;
+  margin-bottom: 2em;
+}
+.speed-control label {
+  font-size: .8em;
+}
+.speed-control input {
+  width: 100%;
 }
 
 .controller-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 .controller-row > div {
-  width: 7.5em;
-  height: 7.5em;
+  width: 12em;
+  height: 12em;
   background: white;
   text-align: center;
   border: 1px solid darkolivegreen;
@@ -41,7 +51,7 @@ body {
 }
 
 .controller-row > div > i {
-  font-size: 5em;
+  font-size: 11em;
   pointer-events: none;
 }
 

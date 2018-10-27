@@ -9,7 +9,7 @@
   })
 
   socket.on('response', (m) => {
-    console.info('response: command ' + m + ' received')
+    console.info('response: ' + m )
   })
 
   var intervalId = 0
@@ -25,7 +25,15 @@
     clearInterval(intervalId)
   }
 
+  function setSpeed() {
+    let linear = $('#linear').val()
+    let angular = $('#angular').val()
+    socket.emit('set-speed', linear, angular)
+  }
+  
+  $('#linear, #angular').on('change', setSpeed)
   $('.controller-row > div').on('mousedown touchstart pointerdown', handleKeyDown)
   $('.controller-row > div').on('mouseup touchend pointerup', handleKeyUp)
+  setSpeed()
 
 })()

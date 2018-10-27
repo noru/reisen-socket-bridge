@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no" />
     <title>Reisen!</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
@@ -12,6 +13,14 @@
   <body>
 
     <div class="root">
+      <fieldset class="speed-control">
+          <legend>Speed Ctrl</legend>
+          <label for="linear">Linear</label>
+          <input type="range" id="linear" name="linear" min="0" max="100" value="30" />
+          <br>
+          <label for="angular">Angular</label>
+          <input type="range" id="angular" name="angular" min="0" max="100" value="30" />
+      </fieldset>
       <div class="controller">
         <div class="controller-row">
           <div id="up-left"><i class="fa fa-angle-up"></i> </div>
